@@ -7,13 +7,13 @@
 
 <LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="horizontal">
 
     <LinearLayout
         android:layout_weight="1"
         android:layout_width="0dp"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         tools:context=".MainActivity">
 
@@ -22,15 +22,18 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:padding="4dp"
-            android:text="Team A" />
+            android:text="Team A"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/black" />
 
         <TextView
             android:id="@+id/team_a_score"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:gravity="center"
             android:padding="4dp"
-            android:text="0" />
+            android:text="0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
         <Button
             android:layout_width="match_parent"
@@ -56,9 +59,14 @@
 
     </LinearLayout>
 
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"/>
+
     <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
         android:orientation="vertical"
         tools:context=".MainActivity">
@@ -68,15 +76,18 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:padding="4dp"
-            android:text="Team B" />
+            android:text="Team B"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/black"/>
 
         <TextView
             android:id="@+id/team_b_score"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:gravity="center"
             android:padding="4dp"
-            android:text="0" />
+            android:text="0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
         <Button
             android:layout_width="match_parent"
@@ -103,14 +114,18 @@
     </LinearLayout>
 
 </LinearLayout>
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="RESET"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="8dp"
-        android:onClick="resetScore"/>
+        android:layout_marginStart="162dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="resetScore"
+        android:text="RESET" />
 
 
 </RelativeLayout>
